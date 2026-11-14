@@ -159,7 +159,7 @@ footer{padding:34px 0 46px;text-align:center;color:var(--muted);font-size:13px;f
       <a href="#skills" class="hide">Skills</a>
       <a href="#certs" class="hide">Certifications</a>
       <a href="#contact">Contact</a>
-      <button class="tbtn" id="theme" aria-label="Toggle light or dark theme">◐</button>
+      <button class="tbtn" id="theme" aria-label="Toggle light or dark theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
     </div>
   </nav></div>
 </header>
@@ -201,10 +201,10 @@ footer{padding:34px 0 46px;text-align:center;color:var(--muted);font-size:13px;f
           <p>Nobody touches a target directly. Every session is brokered, authenticated and audited through a privileged access bastion.</p>
           <ul>
             <li>RDP to Windows Server, RDS RemoteApp (Chrome) and SSH to Debian</li>
-            <li>Active Directory with <b>LDAPS on 636</b>, never plain LDAP, backed by AD DS</li>
+            <li>AD DS authentication over <b>LDAPS (636)</b>, never plain LDAP, with certificates issued by AD CS</li>
             <li>Isolated target network, with admin and user planes on separate interfaces</li>
           </ul>
-          <div class="tags"><span>WALLIX</span><span>Active Directory</span><span>LDAPS</span><span>PKI</span><span>RDS</span><span>Debian</span></div>
+          <div class="tags"><span>WALLIX</span><span>AD DS</span><span>AD CS</span><span>LDAPS</span><span>RDS</span><span>Debian</span></div>
           <a class="go" href="https://github.com/0xEmhddsi-Net/Architecture-Zero-Trust-Wallix-Bastion-PAM" target="_blank" rel="noopener">Read the full walkthrough →</a>
         </div>
         <div class="flow" aria-label="Architecture: user to bastion to targets">
@@ -248,10 +248,10 @@ footer{padding:34px 0 46px;text-align:center;color:var(--muted);font-size:13px;f
     <div class="eyebrow rv">02 / toolbox</div>
     <h2 class="rv">What I work with.</h2>
     <div class="skills">
-      <div class="sk rv"><h4>access &amp; identity</h4><div class="tags"><span>WALLIX Bastion</span><span>Active Directory</span><span>GPO</span><span>LDAPS</span><span>AD CS</span><span>MFA</span></div></div>
+      <div class="sk rv"><h4>access &amp; identity</h4><div class="tags"><span>WALLIX Bastion</span><span>AD DS</span><span>GPO</span><span>AD CS (PKI)</span><span>LDAPS</span><span>MFA</span></div></div>
       <div class="sk rv"><h4>network security</h4><div class="tags"><span>pfSense</span><span>iptables</span><span>Palo Alto NGFW</span><span>Barracuda WAF</span><span>Forcepoint SWG</span><span>FortiNAC</span></div></div>
       <div class="sk rv"><h4>endpoint &amp; data</h4><div class="tags"><span>Kaspersky EDR</span><span>Tripwire FIM</span><span>PGP</span></div></div>
-      <div class="sk rv"><h4>monitoring &amp; offense</h4><div class="tags"><span>Splunk</span><span>Kali Linux</span><span>Nmap</span></div></div>
+      <div class="sk rv"><h4>monitoring &amp; offense</h4><div class="tags"><span>Splunk</span><span>rsyslog</span><span>Kali Linux</span><span>Nmap</span></div></div>
       <div class="sk rv"><h4>systems</h4><div class="tags"><span>Windows Server</span><span>Debian</span><span>Proxmox VE</span><span>VMware</span></div></div>
       <div class="sk rv"><h4>networking</h4><div class="tags"><span>TCP/IP</span><span>VLAN</span><span>DNS</span><span>DHCP</span><span>SSH</span><span>Cisco</span></div></div>
     </div>
